@@ -5,7 +5,319 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Profile</title>
 </head>
-<body>
+<body id ="top">
+    <!-- Header -->
+     <header>
+        <h1>Hidaya Alabri</h1>
+        <p>Computer Science Student | AI & Data Science</p>
+    </header>
 
+    <!-- Navigation -->
+    <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="company.html">Company</a>
+    </nav>
+    <main>
 
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="profile.png"
+                 alt="Profile photo of Hidaya Alabri"
+                 width="200"
+                 height="200">
+
+            <p>
+                Hello! My name is <strong>Hidaya Alabri</strong>.
+                I am a Computer Science student specializing in
+                <em>Artificial Intelligence and Data Science</em>.
+                I enjoy web development, C#, and learning new technologies.
+            </p>
+
+            <h3>Audio Introduction</h3>
+
+            <audio controls>
+                <source src="Intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+        <hr>
+
+        <!-- Skills -->
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <h3>Current Skills</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>C#</li>
+                <li>SQL Server</li>
+                <li>ASP.NET Core</li>
+                <li>Flutter</li>
+                <li>Git & GitHub</li>
+            </ul>
+
+            <h3>Learning Path</h3>
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <!-- Experience -->
+
+        <section id="experience">
+
+            <h2>Experience</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Role</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Years</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>System Administrator Intern</td>
+                        <td>Oman National CERT</td>
+                        <td>2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>Flutter Developer Intern</td>
+                        <td>Sultan Qaboos University</td>
+                        <td>2025</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- Registration -->
+
+        <section id="registration">
+
+            <h2>Employee Registration</h2>
+
+            <form>
+
+                <!-- Fieldset 1 -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name</label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required
+                        minlength="3"
+                        maxlength="50">
+
+                    <br><br>
+
+                    <label for="email">Email</label>
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+
+                    <br><br>
+
+                    <label for="age">Age</label>
+                    <br>
+
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="18"
+                        max="65">
+
+                    <br><br>
+
+                    <label for="hiredate">Hire Date</label>
+                    <br>
+
+                    <input
+                        type="date"
+                        id="hiredate"
+                        name="hiredate">
+
+                </fieldset>
+
+                <br>
+
+                <!-- Fieldset 2 -->
+
+                <fieldset>
+
+                    <legend>Employment Information</legend>
+
+                    <label for="code">Employee Code</label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="code"
+                        name="code"
+                        pattern="[A-Z]{2}[0-9]{4}"
+                        placeholder="AB1234">
+
+                    <br><br>
+
+                    <label for="department">Department</label>
+                    <br>
+
+                    <select id="department" name="department">
+
+                        <option>IT</option>
+                        <option>HR</option>
+                        <option>Marketing</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label>Employment Type</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="fulltime"
+                        name="employment"
+                        value="Full-Time">
+
+                    <label for="fulltime">Full-Time</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="parttime"
+                        name="employment"
+                        value="Part-Time">
+
+                    <label for="parttime">Part-Time</label>
+
+                    <br><br>
+
+                    <label>Benefits</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="health"
+                        name="benefits">
+
+                    <label for="health">Health Insurance</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="transport"
+                        name="benefits">
+
+                    <label for="transport">Transportation</label>
+
+                    <br><br>
+
+                    <label for="bio">Bio</label>
+
+                    <br>
+
+                    <textarea
+                        id="bio"
+                        name="bio"
+                        rows="5"
+                        cols="40"></textarea>
+
+                    <br><br>
+
+                    <label for="resume">Resume</label>
+
+                    <br>
+
+                    <input
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        accept=".pdf,.doc,.docx">
+
+                    <br><br>
+
+                    <label for="employeeid">Employee ID</label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="employeeid"
+                        value="EMP001"
+                        readonly>
+
+                    <br><br>
+
+                    <label for="legacy">Legacy Field</label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="legacy"
+                        value="OLD123"
+                        disabled>
+
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>&copy; 2026 Hidaya Alabri. All Rights Reserved.</p>
+
+        <a href="#top">Back to Top</a>
+
+    </footer>
 </body>
+</html>
