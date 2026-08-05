@@ -32,7 +32,67 @@
         <li><a href="#">Electronics</a></li>
         <li>Smartphones</li>
     </ol>
-
 </nav>
+<main>
+    <aside>
+        <h2>Filter Products</h2>
+        <form>
+            <fieldset>
+                <legend>Brand</legend>
+                <label>
+                    <input type="checkbox" name="brand" value="TechVision">
+                    TechVision
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="brand" value="SmartTech">
+                    SmartTech
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="brand" value="NovaPhone">
+                    NovaPhone
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend>Minimum Rating</legend>
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    4 Stars & Up
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    3 Stars & Up
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    2 Stars & Up
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Price Range</legend>
+                <label for="min-price">Minimum Price</label>
+                <input
+                    type="number"
+                    id="min-price"
+                    name="min-price">
+                <br><br>
+                <label for="max-price">Maximum Price</label>
+                <input
+                    type="number"
+                    id="max-price"
+                    name="max-price">
+            </fieldset>
+            <br>
+            <button type="submit">
+                Apply Filters
+            </button>
+        </form>
+    </aside>
+</main>
 </body>
 </html>
