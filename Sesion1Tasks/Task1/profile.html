@@ -8,54 +8,60 @@
 </head>
 <body id ="top">
     <!-- Header -->
-     <header>
-        <h1>Hidaya Alabri</h1>
-        <p>Computer Science Graduate| AI & Data Science</p>
-    </header>
-
-    <!-- Navigation -->
+    <header>
     <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-    <a href="company.html">Company</a>
+        <h2 class="logo">HA</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#registration">Register</a></li>
+            <li><a href="company.html">Company</a></li>
+        </ul>
     </nav>
-    <main>
+</header>
+<section class="hero">
+    <div class="hero-image">
+        <img src="Profile.png"
+             alt="Profile Photo">
+    </div>
+    <div class="hero-text">
+       <h3>Hello, I'm</h3>
+        <h1>Hidaya Alabri</h1>
+        <p>
+            Computer Science Graduate
+            <br>
+            AI & Data Science
+        </p>
+        <a href="#registration" class="btn">
+            Register
+        </a>
+        <a href="company.html" class="btn">
+            Company
+        </a>
+    </div>
 
+</section>
+    <main>
         <!-- About -->
         <section id="about">
             <h2>About Me</h2>
-
-            <img src="profile.png"
-                 alt="Profile photo of Hidaya Alabri"
-                 width="200"
-                 height="200">
-
             <p>
                 Hello! My name is <strong>Hidaya Alabri</strong>.
                 I am a Computer Science graduate specializing in
                 <em>Artificial Intelligence and Data Science</em>.
                 I enjoy web development, C#, and learning new technologies.
             </p>
-
             <h3>Audio Introduction</h3>
-
             <audio controls>
                 <source src="Intro.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-
-        </section>
-
-        <hr>
-
+        </section>   
         <!-- Skills -->
         <section id="skills">
-
             <h2>Skills</h2>
-
             <h3>Current Skills</h3>
-
             <ul>
                 <li>HTML</li>
                 <li>C#</li>
@@ -64,22 +70,15 @@
                 <li>Flutter</li>
                 <li>Git & GitHub</li>
             </ul>
-
             <h3>Learning Path</h3>
-
             <ol>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Bootstrap</li>
                 <li>JavaScript</li>
             </ol>
-
         </section>
-
-        <hr>
-
         <!-- Experience -->
-
         <section id="experience">
 
             <h2>Experience</h2>
@@ -115,8 +114,6 @@
             </table>
 
         </section>
-
-        <hr>
 
         <!-- Registration -->
 
@@ -244,75 +241,50 @@
                     <label for="health">Health Insurance</label>
 
                     <br>
-
                     <input
                         type="checkbox"
                         id="transport"
                         name="benefits">
-
                     <label for="transport">Transportation</label>
-
                     <br><br>
-
                     <label for="bio">Bio</label>
-
                     <br>
-
                     <textarea
                         id="bio"
                         name="bio"
                         rows="5"
                         cols="40"></textarea>
-
                     <br><br>
-
                     <label for="resume">Resume</label>
-
                     <br>
-
                     <input
                         type="file"
                         id="resume"
                         name="resume"
                         accept=".pdf,.doc,.docx">
-
                     <br><br>
-
                     <label for="employeeid">Employee ID</label>
-
                     <br>
-
                     <input
                         type="text"
                         id="employeeid"
                         value="EMP001"
                         readonly>
-
                     <br><br>
-
                     <label for="legacy">Legacy Field</label>
-
                     <br>
-
                     <input
                         type="text"
                         id="legacy"
                         value="OLD123"
                         disabled>
-
                 </fieldset>
-
                 <br>
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
             </form>
-
         </section>
-
     </main>
-
-    <hr>
-
     <footer>
 
         <p>&copy; 2026 Hidaya Alabri. All Rights Reserved.</p>
