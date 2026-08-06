@@ -110,3 +110,21 @@ section h2{
     margin-bottom:30px; 
     color:#111; 
 }
+#about{
+    background:white;
+    padding:50px;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+#about p{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    max-width:800px;
+}
+
+audio{
+    margin-top:25px;
+    width:300px;
+}
