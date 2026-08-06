@@ -398,3 +398,176 @@ aside h2{
     margin-bottom:15px;
 
 }
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+footer p{
+
+    margin-bottom:15px;
+}
+footer a{
+    color:#60a5fa;
+    text-decoration:none;
+    margin:0 10px;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+@media(max-width:768px){
+
+    nav{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .features-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .team-grid{
+
+        flex-direction:column;
+
+    }
+
+    section{
+
+        padding:30px;
+
+    }
+
+    header h1{
+
+        font-size:38px;
+
+    }
+
+    section h2{
+
+        font-size:32px;
+
+    }
+
+    #video video{
+
+        width:100%;
+
+    }
+
+}
+.hero-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:450px;
+
+}
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.stat-card h2{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+footer a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    font-weight:bold;
+
+}
+section{
+
+    transition:.4s;
+
+}
+
+section:hover{
+
+    transform:translateY(-5px);
+
+}
+.stat-card,
+.team-card,
+.features-grid article{
+
+    transition:.3s;
+
+}
+
+.stat-card:hover,
+.team-card:hover,
+.features-grid article:hover{
+
+    transform:translateY(-10px);
+
+}
