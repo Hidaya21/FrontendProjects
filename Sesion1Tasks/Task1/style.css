@@ -44,27 +44,29 @@ nav a:hover{
     color:#0d6efd;
 }
 .hero{
-    width: 90%;
-    mmin-height:100vh;
-    margin:auto;
-    padding-top:90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    width:85%;
+    max-width:1200px;
+    min-height:90vh;
+    margin:0 auto;
+    padding-top:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:100px;
 }
 .hero-image img{
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 8px solid white;
-    box-shadow: 0 15px 40px rgba(0,0,0,.15);
-    transition: .4s;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transition:.3s;
 }
 .hero-image img:hover{
-    transform: scale(1.05);
+    transform:scale(1.05);
 }
+
 .hero-text{
     flex: 1;
 }
@@ -74,15 +76,15 @@ nav a:hover{
     margin-bottom: 10px;
 }
 .hero-text h1{
-    font-size:72px;
+    font-size:64px;
     font-weight:700;
-    margin-bottom: 20px;
+    margin:15px 0;
 }
 .hero-text p{
-    font-size:24px;
-    color:#666;
-    margin-bottom:40px;
+    font-size:22px;
+    color:#555;
     line-height:1.8;
+    margin-bottom:35px;
 }
 .btn{
     display:inline-block;
@@ -100,14 +102,17 @@ nav a:hover{
     transform:translateY(-3px);
 }
 main{
-     width:90%; margin:auto;
-     } 
+    width:85%;
+    max-width:1200px;
+    margin:0 auto;
+}
 section { 
     margin:100px 0; 
+    padding:60px 0;
 } 
-section h2{ 
-    font-size:42px; 
-    margin-bottom:30px; 
+section h2{
+    font-size:48px;
+    margin-bottom:40px;
     color:#111; 
 }
 #about{
@@ -128,23 +133,167 @@ audio{
     margin-top:25px;
     width:300px;
 }
+
 .skills-grid{
-     display:grid; 
-     grid-template-columns:repeat(auto-fit, minmax(160px, 1fr))
-     ; gap:20px; 
-    }
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:35px;
+}
 .skill-card{
-    background:white; 
-    padding:30px 20px;
-     border-radius:20px;
+    background:white;
+    padding:35px 20px;
+    border-radius:18px;
     text-align:center;
-    font-weight:bold; 
-    font-size:18px;
-     box-shadow:0 10px 25px rgba(0,0,0,.08);
-      transition:.3s; 
-    } 
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
 .skill-card:hover{
-    transform:translateY(-8px); 
-    background:#2563eb; 
-    color:white; 
+    transform:translateY(-10px);
+    background:#2563eb;
+    color:white;
+}
+#skills ol{
+    width:100%;
+    max-width:600px;
+    background:white;
+    padding:35px 50px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+#skills h3{
+    font-size:32px;
+    margin-top:60px;
+    margin-bottom:25px;
+    color:#111827;
+}
+#skills li{
+    margin:20px 0;
+    font-size:22px;
+    font-weight:600;
+    color:#374151;
+}
+
+#experience table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+#experience th{
+    background:#2563eb;
+    color:white;
+    padding:18px;
+    text-align:left;
+}
+
+#experience td{
+    padding:18px;
+    border-bottom:1px solid #eee;
+}
+
+#experience tr:hover{
+    background:#f5f7ff;
+}
+section{
+    padding:70px 0;
+}
+section h2{
+    font-size:46px;
+    margin-bottom:30px;
+}
+form{
+    max-width:900px;
+    margin:auto;
+}
+#registration{
+    background:white;
+    padding:60px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+fieldset{
+    border:2px solid #e5e7eb;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:30px;
+}
+legend{
+    font-size:22px;
+    font-weight:bold;
+    color:#2563eb;
+    padding:0 10px;
+}
+label{
+    font-weight:bold;
+    color:#374151;
+}
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    margin-top:8px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 5px rgba(37,99,235,.3);
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
+}
+input[type="submit"],
+input[type="reset"]{
+    width:auto;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    margin-right:15px;
+}
+input[type="reset"]{
+
+    background:#6b7280;
+
+}
+input[type="submit"]:hover{
+
+    background:#1d4ed8;
+
+}
+input[type="reset"]:hover{
+
+    background:#4b5563;
+
+}
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+}
+footer a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+footer a:hover{
+    text-decoration:underline;
 }
